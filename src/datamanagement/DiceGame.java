@@ -1,9 +1,15 @@
 package datamanagement;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class DiceGame {
 	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+	    System.out.print("What is your name?");
+	    final String name = scanner.nextLine();
+	    System.out.println("Hello," + name + "!");
+
 		final Random r = new Random();
 		final int dice1 = r.nextInt(6);
 		final int dice2 = r.nextInt(6);
