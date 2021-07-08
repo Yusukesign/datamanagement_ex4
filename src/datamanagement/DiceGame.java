@@ -20,7 +20,7 @@ public class DiceGame {
 		final int total = dice1 + dice2;
 		System.out.println("Total value:" + total);
 
-		final String result = total > 7 ? "You won" : "You lost";
+		final String result = total > 7 ? name + " won" : name + " lost";
 
 		System.out.println(result);
 	}
